@@ -1,0 +1,23 @@
+[Unit]
+Description=Node.js Tracker Data server
+#Requires=After=mysql.service       # Requires the mysql service to run first
+
+[Service]
+#ExecStart=/usr/bin/node /opt/data-server/data-server.js
+ExecStart=/usr/bin/node /home/pi/Public/data-server/data-server.js
+# for logfile add    2>&1 >> /var/log/data-server.log
+# Required on some systems
+#WorkingDirectory=/opt/data-server
+Restart=always
+ # Restart service after 10 seconds if node service crashes
+ RestartSec=10
+ # Output to syslog
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=data-server
+#User=<alternate user>
+#Group=<alternate group>
+Environment=NODE_ENV=production PORT=8000
+
+[Install]
+WantedBy=multi-user.target

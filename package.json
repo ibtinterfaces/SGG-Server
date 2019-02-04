@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Tracker Server",
+  "main": "data-server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "nils.koehler@ibt-interfaces.de",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "serialport": "^6.2.2",
+    "socket.io": "^2.1.1"
+  }
+}
