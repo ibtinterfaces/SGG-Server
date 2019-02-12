@@ -11,8 +11,9 @@ var trackerConfig = [{
     orgaselect: 0,
 }]
 
-io = require("socket.io"),
-server = io.listen(port);
+const io = require("socket.io")
+const server = io.listen(port)
+
 console.log('Websocket Server is listening on Port: '+port)
 // event fired every time a new client connects:
 server.on("connection", (socket) => {
