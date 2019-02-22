@@ -66,6 +66,16 @@ server.on("connection", (socket) => {
         console.info('Receive busy data');
         console.info(data);
     });
+    socket.on('orga_busy', (data) => {
+        server.emit('orga_busy', data)
+        console.info('Receive orga busy data');
+        console.info(data);
+    });
+    socket.on('orga_pause', (data) => {
+        server.emit('orga_pause', data)
+        console.info('Receive orga pause data');
+        console.info(data);
+    });
     
   });
   
