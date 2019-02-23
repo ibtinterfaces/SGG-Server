@@ -76,6 +76,12 @@ server.on("connection", (socket) => {
         console.info('Receive orga pause data');
         console.info(data);
     });
+    socket.on('cleanup_mobile', (data) => {
+        server.emit('cleanup_mobile', data)
+        console.info('Receive cleanup mobile');
+        console.info(data);
+    });
+    
     
   });
   
