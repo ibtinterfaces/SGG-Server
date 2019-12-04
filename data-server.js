@@ -56,11 +56,125 @@ server.on("connection", (socket) => {
 
         console.info(data);
     });
-    socket.on('mobile_vote', (data) => {
-        server.emit('mobile_vote', data)
-        console.info('Receive vote data');
+    socket.on('mob_vote_t1', (data) => {
+        server.emit('mob_vote_t1', data)
+        console.info('Receive mob_vote_t1');
         console.info(data);
     });
+    socket.on('mob_vote_t2', (data) => {
+        server.emit('mob_vote_t2', data)
+        console.info('Receive mob_vote_t2');
+        console.info(data);
+    });
+    socket.on('mob_vote_t3', (data) => {
+        server.emit('mob_vote_t3', data)
+        console.info('Receive mob_vote_t3');
+        console.info(data);
+    });
+    socket.on('mob_vote_t4', (data) => {
+        server.emit('mob_vote_t4', data)
+        console.info('Receive mob_vote_t4');
+        console.info(data);
+    });
+
+    socket.on('mob_resp_t1', (data) => {
+        server.emit('mob_resp_t1', data)
+        console.info('Receive mob_resp_t1');
+        console.info(data);
+    });
+    socket.on('mob_resp_t2', (data) => {
+        server.emit('mob_resp_t2', data)
+        console.info('Receive mob_resp_t2');
+        console.info(data);
+    });
+    socket.on('mob_resp_t3', (data) => {
+        server.emit('mob_resp_t3', data)
+        console.info('Receive mob_resp_t3');
+        console.info(data);
+    });
+    socket.on('mob_resp_t4', (data) => {
+        server.emit('mob_resp_t4', data)
+        console.info('Receive mob_resp_t4');
+        console.info(data);
+    });
+
+
+
+
+    socket.on('mob_vote_a1', (data) => {
+        server.emit('mob_vote_a1', data)
+        console.info('Receive mob_vote_a1');
+        console.info(data);
+    });
+    socket.on('mob_vote_a2', (data) => {
+        server.emit('mob_vote_a2', data)
+        console.info('Receive mob_vote_a2');
+        console.info(data);
+    });
+    socket.on('mob_vote_a3', (data) => {
+        server.emit('mob_vote_a3', data)
+        console.info('Receive mob_vote_a3');
+        console.info(data);
+    });
+    socket.on('mob_vote_a4', (data) => {
+        server.emit('mob_vote_a4', data)
+        console.info('Receive mob_vote_a4');
+        console.info(data);
+    });
+
+    socket.on('mob_resp_a1', (data) => {
+        server.emit('mob_resp_a1', data)
+        console.info('Receive mob_resp_a1');
+        console.info(data);
+    });
+    socket.on('mob_resp_a2', (data) => {
+        server.emit('mob_resp_a2', data)
+        console.info('Receive mob_resp_a2');
+        console.info(data);
+    });
+    socket.on('mob_resp_a3', (data) => {
+        server.emit('mob_resp_a3', data)
+        console.info('Receive mob_resp_a3');
+        console.info(data);
+    });
+    socket.on('mob_resp_a4', (data) => {
+        server.emit('mob_resp_a4', data)
+        console.info('Receive mob_resp_a4');
+        console.info(data);
+    });
+
+
+    socket.on('mob_vote_dj', (data) => {
+        server.emit('mob_vote_dj', data)
+        console.info('Receive mob_vote_dj');
+        console.info(data);
+    });
+    socket.on('mob_resp_dj', (data) => {
+        server.emit('mob_resp_dj', data)
+        console.info('Receive mob_resp_dj');
+        console.info(data);
+    });
+
+
+
+    socket.on('mob_vote_cjp', (data) => {
+        server.emit('mob_vote_cjp', data)
+        console.info('Receive mob_vote_cjp');
+        console.info(data);
+    });
+    socket.on('mob_resp_cjp', (data) => {
+        server.emit('mob_resp_cjp', data)
+        console.info('Receive mob_resp_cjp');
+        console.info(data);
+    });
+
+
+
+    // socket.on('mobile_vote', (data) => {
+    //     server.emit('mobile_vote', data)
+    //     console.info('Receive vote data');
+    //     console.info(data);
+    // });
     socket.on('mobile_busy', (data) => {
         server.emit('mobile_busy', data)
         console.info('Receive busy data');
